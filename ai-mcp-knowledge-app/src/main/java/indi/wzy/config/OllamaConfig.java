@@ -44,7 +44,7 @@ public class OllamaConfig {
                 .defaultOptions(OllamaOptions.builder().model("nomic-embed-text").build())
                 .build();
         return PgVectorStore.builder(jdbcTemplate, embeddingModel)
-                .vectorTableName("vector_store_ollama_deepseek")
+                .vectorTableName("vector_store_ollama_deepseek")   // 指定向量库的表
                 .build();
     }
 

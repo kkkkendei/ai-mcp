@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: postgres
-    url: jdbc:postgresql://192.168.1.109:15432/ai-rag-knowledge
+    username: wzy
+    password: 5185021
+    url: jdbc:postgresql://47.122.26.159:5432/springai
     type: com.zaxxer.hikari.HikariDataSource
     # hikari连接池配置
     hikari:
@@ -28,25 +28,25 @@ spring:
       connection-test-query: SELECT 1
   ai:
     ollama:
-      base-url: http://192.168.1.109:11434
+      base-url: http://localhost:11434
       embedding:
         options:
           num-batch: 512
         model: nomic-embed-text
     openai:
-      base-url: https://pro-share-aws-api.zcyai.com/
-      api-key: sk-eEyfxptPgbfXd3Z164260740E0494161Bd8**找小傅哥申请
+      base-url: https://api.poixe.com
+      api-key: sk-29rbJdQ3umipC6zfhvmg1h9TVyoHIx8rOlgfVI7pe97TvlCR
       embedding-model: text-embedding-ada-002
     rag:
       embed: nomic-embed-text #nomic-embed-text、text-embedding-ada-002
-
 
 # Redis
 redis:
   sdk:
     config:
-      host: 192.168.1.109
-      port: 16379
+      host: 47.122.26.159
+      port: 6379
+      password: 5185021
       pool-size: 10
       min-idle-size: 5
       idle-timeout: 30000

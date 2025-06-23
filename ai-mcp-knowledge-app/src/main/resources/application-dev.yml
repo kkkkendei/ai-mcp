@@ -6,9 +6,9 @@ spring:
     web-application-type: none
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: root
-    password: XSJroot123456
-    url: jdbc:postgresql://113.44.95.208:5432/ai-rag-knowledge
+    username: wzy
+    password: 5185021
+    url: jdbc:postgresql://47.122.26.159:5432/springai
     type: com.zaxxer.hikari.HikariDataSource
   ai:
     openai:
