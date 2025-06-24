@@ -46,13 +46,13 @@ public class OllamaTest {
     @Value("classpath:data/dog.png")
     private org.springframework.core.io.Resource imageResource;
 
-    @jakarta.annotation.Resource(name = "ollamaSimpleVectorStore")
+    @Resource(name = "ollamaSimpleVectorStore")
     private SimpleVectorStore simpleVectorStore;
 
-    @jakarta.annotation.Resource(name = "ollamaPgVectorStore")
+    @Resource(name = "ollamaPgVectorStore")
     private PgVectorStore pgVectorStore;
 
-    @jakarta.annotation.Resource
+    @Resource
     private TokenTextSplitter tokenTextSplitter;
 
     @Test
