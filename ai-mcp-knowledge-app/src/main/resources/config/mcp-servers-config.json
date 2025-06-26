@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Project/MCPTest",
+        "/Project/MCPTest"
+      ]
+    }
+  },
+  "mcp-server-computer": {
+    "command": "java",
+    "args": [
+      "-Dspring.ai.mcp.server.stdio=true",
+      "-jar",
+      "/Users/吴泽宇/.m2/repository/indi/wzy/mcp-server-computer/1.0.0/mcp-server-computer-1.0.0.jar"
+    ]
+  }
+}
+
